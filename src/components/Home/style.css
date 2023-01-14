@@ -1,0 +1,34 @@
+.title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Roboto Serif', serif;
+}
+ .filter{
+    cursor: pointer;
+    margin: 15px 0px 0px 70px;
+}
+ .filter span{
+    position: relative;
+    top: 3px;
+}
+ .title h1{
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+}
+.container{
+    margin: 30px auto auto;
+    width: 98%;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem; */
+}

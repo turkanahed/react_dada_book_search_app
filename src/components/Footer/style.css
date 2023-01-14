@@ -1,0 +1,44 @@
+footer{
+    background-color: rgba(240, 210, 95, 0.8);
+    padding: 5px 0px 50px;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 30px;
+}
+footer ul li{
+    margin-left: 20px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgb(244, 252, 255) 0px 0px 4px 4px, rgba(254, 255, 255, 0.32) 0px 2px 16px 0px;
+}
+footer ul a{
+    color: black;
+    font-size: 35px;
+}
+footer ul li svg{
+    margin-top: 7px;
+}
+footer .title{
+    margin-top: 30px;
+    line-height: 1.5rem;
+}
+footer .title a{
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+footer .title a:hover{
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease 0s;
+}
+footer .title a span{
+    font-size: 1.1rem;
+}

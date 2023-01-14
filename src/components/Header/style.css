@@ -1,0 +1,34 @@
+header{
+    background-image: url("https://dadabooksearch.netlify.app/images/headerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    font-family: 'Roboto Serif', serif;
+}
+header h1{
+    color: white;
+    text-align: center;
+    padding-top: 110px;
+    font-size: 38px;
+    font-weight: bold;
+}
+header form{
+    text-align: center;
+    margin-top: 30px;
+}
+header form input{
+    width: 650px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(244, 252, 255) 0px 2px 4px 0px, rgba(254, 255, 255, 0.32) 0px 2px 16px 0px;
+}
+header form input:hover{
+    box-shadow: none;
+}
+header form span{
+    position: relative;
+    right: 30px;
+    top: 5px;
+    font-size: 20px;
+}
