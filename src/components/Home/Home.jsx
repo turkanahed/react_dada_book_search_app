@@ -15,7 +15,7 @@ const Home = () => {
     const URL = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyCOnrkrmuLXv_2Pd83F9NmSqypTi2W7q5c`;
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
+        e?.preventDefault();
         const resp = await fetch(URL).then((res) => res.json());
         setData(resp.items)
     };
@@ -29,8 +29,8 @@ const Home = () => {
                     .concat(data)
                     .sort(
                         (a, b) =>
-                            parseInt(a.volumeInfo.publishedDate.slice(0, 4)) -
-                            parseInt(b.volumeInfo.publishedDate.slice(0, 4))
+                            parseInt(a.volumeInfo.publishedDate) -
+                            parseInt(b.volumeInfo.publishedDate)
                     )
             );
         setFilter(!filter);
@@ -44,7 +44,8 @@ const Home = () => {
             />
             {!data
                 ? <div className="title" > <h1>Nothing <br />To <br />Show!?</h1></div>
-                : <div className="filter" onClick={handleFilter} >Ilə görə filterlə <span><FiChevronDown /></span></div>}
+                : <div className="filter" onClick={handleFilter} >Filter by year<span><FiChevronDown /></span></div>}
+
             <div className="container">
                 {data?.map((item) => (
                     <Card
@@ -59,6 +60,7 @@ const Home = () => {
                     />
                 ))}
             </div>
+
             {open ? <Modal setOpen={setOpen} item={detail} /> : ""}
 
             <Footer />

@@ -7,7 +7,7 @@ const Modal = ({ open, setOpen, item }) => {
             <div className="modal-box">
                 <div className="close" onClick={() => setOpen(false)}>x</div>
                 <div className="image-wrapper">
-                    <img src={item?.volumeInfo?.imageLinks?.thumbnail} />
+                    <img src={item?.volumeInfo?.imageLinks?.thumbnail} alt="" />
                 </div>
                 <div className="content">
                     <h4>{item?.volumeInfo?.title}</h4>

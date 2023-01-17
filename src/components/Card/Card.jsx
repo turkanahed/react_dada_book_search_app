@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css"
 
 const Card = ({ img, title, author, setOpen, setDetail, item }) => {
+    
     const handleCancel = () => {
         setDetail(item);
         setOpen(true);
